@@ -1,0 +1,85 @@
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - testing
+  - explore_products
+  - customer_review
+  - register_complain
+  - cart
+  - track_order
+
+slots:
+  phone_number:
+    type: unfeaturized
+    auto_fill: False
+  email:
+    type: unfeaturized
+    auto_fill: False
+  complain_subject:
+    type: unfeaturized
+    auto_fill: False
+  complain_details:
+    type: unfeaturized
+    auto_fill: False
+  order_id:
+    type: unfeaturized
+    auto_fill: False
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by DolphinChat."
+
+  utter_restart:
+  - text: "Conversation Restarted!"
+
+  utter_ask_phone_number:
+  - text: "Please tell me your phone number."
+
+  utter_ask_email:
+  - text: "May I know your email please."
+
+  utter_ask_complain_subject:
+  - text: "What is this complain about?"
+
+  utter_ask_complain_details:
+  - text: "I would like to know in depth on this matter, please mention in detail."
+
+  utter_ask_order_id:
+  - text: "Please state your Order Id/Tracking Id."
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+actions:
+  - action_fallback
+  - action_hello_world
+  - action_testing
+  - action_explore_products
+  - action_customer_review
+
+forms:
+  - form_register_complain
+  - form_track_order

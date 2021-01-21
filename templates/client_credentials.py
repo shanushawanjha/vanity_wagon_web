@@ -1,0 +1,6 @@
+STORE_URL = "https://vw-vanity-wagon.myshopify.com"
+PASSWORD = "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"
+API_KEY = "e539f56024e64b5c1a0395800cf9c303"
+STORE_NAME = "vw-vanity-wagon"
+SHARED_SECRET = "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"
+API_VERSION = "2021-01"
